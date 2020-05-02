@@ -26,31 +26,13 @@ export default function LoginForm({ estado }) {
         <>
           <Field
             name="email"
-            label="Email ou Usuário"
-            component={FieldInput}
-            validate={required}
-          />
-          <Field
-            name="senha"
-            label="Senha"
+            label="ID do Consultor"
             component={FieldInput}
             validate={required}
           />
           <Link to="/main">
             <Button color="primary">Entrar</Button>
           </Link>
-          <Options>
-            <Button className="text-left" color="link">
-              Esqueci minha senha
-            </Button>
-            <Button
-              className="text-right"
-              color="link"
-              onClick={() => estado(false)}
-            >
-              Cadastre-se
-            </Button>
-          </Options>
         </>
       )}
     />
